@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.hormex.entities">
+	<class name="Branch" table="branch">
+		<id name="branchNo" >
+		  <column name="branch_no" sql-type="integer"   not-null="true" />
+		</id>
+		<property name="branchName" >
+		  <column name="branch_nm" sql-type="character varying" length="45" not-null="true"/>
+		</property>
+		<property name="bankName" >
+		  <column name="bank_nm" sql-type="character varying" length="45" not-null="true" />
+		</property>
+		<property name="ifscCode" >
+		  <column name="ifsc_code" sql-type="character varying" length="15" not-null="true" />
+		</property>
+		<property name="location" >
+		 <column name="location" sql-type="character varying" length="45" not-null="true" />
+		</property>
+		
+	</class>
+
+</hibernate-mapping>
